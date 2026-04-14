@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr.Web VirLabConf 2.0</title>
+  </head>
+  <body>
+
+    <main class="main">
+
+      <header class="header">
+        <div class="container">
+          <a href="/" class="logo">
+            <svg width="143" height="25">
+              <use href="#icon-logo" />
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <section class="hero">  
+        <div class="container">  
+          <h1 class="hero__title">
+            Dr.Web VirLabConf <span class="text-acid">2.0</span>
+          </h1>
+          <p class="hero__description">
+            Только для своих&nbsp;&mdash; <span class="text-acid">закрытая конференция</span> антивирусной лаборатории Dr.Web. Идеальное место для того, чтобы узнать <span class="text-acid">о&nbsp;новейших киберугрозах,</span> их&nbsp;эволюции и&nbsp;способах защиты.
+          </p>
+          <div class="hero__event">
+            <div class="hero__labels">
+              <div class="hero__label">
+                <span class="hero__label-name">Дата:</span>
+                <span class="hero__label-value">4 апреля 2025</span>
+              </div>
+              <div class="hero__label">
+                <span class="hero__label-name">Время:</span>
+                <span class="hero__label-value">10:30</span>
+              </div>
+            </div>
+            <p class="hero__address">
+              <span class="text-acid">Bolshevik Loft,</span>
+              Ленинградский проспект, 15, стр. 1 (БЦ «Большевик»), г. Москва
+            </p>
+            <a href="#" class="hero__schedule-link" download>
+              <span>Программа мероприятия</span>
+              <svg width="32" height="32">
+                <use href="#icon-download" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="registration">
+        <div class="container">
+
+          <h2 class="registration__title">
+            Заполните форму регистрации
+          </h2>
+
+          <form class="registration__form">
+            <div class="registration__form-field">
+              <label for="reg-name" class="registration__form-label">Фамилия, Имя</label>
+              <input type="text" class="registration__form-input" name="reg-name" id="reg-name">
+              <span class="registration__form-error-text">Укажите данные</span>
+            </div>
+            <div class="registration__form-field">
+              <label for="reg-company" class="registration__form-label">Компания</label>
+              <input type="text" class="registration__form-input" name="reg-company" id="reg-company">
+              <span class="registration__form-error-text">Укажите данные</span>
+            </div>
+            <div class="registration__form-field">
+              <label for="reg-position" class="registration__form-label">Должность</label>
+              <input type="text" class="registration__form-input" name="reg-position" id="reg-position">
+              <span class="registration__form-error-text">Укажите данные</span>
+            </div>
+            <div class="registration__form-field">
+              <label for="reg-mail" class="registration__form-label">E-mail</label>
+              <input type="email" class="registration__form-input" name="reg-mail" id="reg-mail">
+              <span class="registration__form-error-text">Укажите данные</span>
+            </div>
+            <div class="registration__form-field">
+              <label for="reg-phone" class="registration__form-label">Телефон</label>
+              <input type="tel" class="registration__form-input" name="reg-phone" id="reg-phone">
+              <span class="registration__form-error-text">Укажите данные</span>
+            </div>
+
+            <div class="registration__form-warning">
+              Обратите внимание на&nbsp;правильность указания адреса электронной почты: на&nbsp;него придет подтверждение регистрации.
+            </div>
+
+            <span>Все поля обязательны для заполнения!</span>
+
+            <div class="registration__form-agreement">
+              <input type="checkbox" class="registration__form-checkbox" id="reg-agreement" name="reg-agreement">
+              <label for="reg-agreement" class="registration__form-checkbox-label">
+                Я даю согласие на обработку моих персональных данных  в соответствии с <a href="#" target="_blank">Политикой конфиденциальности</a>
+              </label>
+            </div>
+
+            <button class="registration__form-submit">Зарегистрироваться</button>
+          </form>
+
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="contact-us">
+          <div class="contact-us__info">
+            <h3 class="contact-us__title">Остались вопросы?</h3>
+            <p class="contact-us__text">
+              Напишите нам <a href="mailto:marketing@drweb.com" class="contact-us__email">marketing@drweb.com</a>
+            </p>
+          </div>
+          <img src="./src/images/heart.png" width="140" height="140" alt="Картинка" class="contact-us__image" loading="lazy">
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__navs">
+          <nav class="footer__nav">
+            <a href="#" class="footer__nav-link">Для дома</a>
+            <a href="#" class="footer__nav-link">Для бизнеса</a>
+            <a href="#" class="footer__nav-link">Поддержка</a>
+          </nav>
+          <nav class="footer__nav">
+            <a href="#" class="footer__nav-link">Пользователям</a>
+            <a href="#" class="footer__nav-link">Партнерам</a>
+            <a href="#" class="footer__nav-link">О компании</a>
+          </nav>
+          <nav class="footer__nav">
+            <a href="#" class="footer__nav-link">Контакты</a>
+            <a href="#" class="footer__nav-link">Вакансии</a>
+            <div class="footer__navs-mob">
+              <a href="#" class="footer__navs-mob-link">Для дома</a>
+              <a href="#" class="footer__navs-mob-link">Для бизнеса</a>
+              <a href="#" class="footer__navs-mob-link">Поддержка</a>
+              <a href="#" class="footer__navs-mob-link">Пользователям</a>
+              <a href="#" class="footer__navs-mob-link">Партнерам</a>
+              <a href="#" class="footer__navs-mob-link">О компании</a>
+              <a href="#" class="footer__navs-mob-link">Контакты</a>
+              <a href="#" class="footer__navs-mob-link">Вакансии</a>
+            </div>
+            <div class="footer__nav-socials">
+              <a href="#" target="_blank">
+                <svg width="24" height="24">
+                  <use href="#icon-sc_telegram" />
+                </svg>
+              </a>
+              <a href="#" target="_blank">
+                <svg width="24" height="24">
+                  <use href="#icon-sc_vk" />
+                </svg>
+              </a>
+              <a href="#" target="_blank">
+                <svg width="24" height="24">
+                  <use href="#icon-sc_dzen" />
+                </svg>
+              </a>
+              <a href="#" target="_blank">
+                <svg width="24" height="24">
+                  <use href="#icon-sc_habr" />
+                </svg>
+              </a>
+              <a href="#" target="_blank">
+                <svg width="24" height="24">
+                  <use href="#icon-sc_youtube" />
+                </svg>
+              </a>
+              <a href="#" target="_blank">
+                <svg width="24" height="24">
+                  <use href="#icon-sc_rutube" />
+                </svg>
+              </a>
+              <a href="#" target="_blank">
+                <svg width="24" height="24">
+                  <use href="#icon-sc_ok" />
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__meta">
+          <div class="footer__info">
+            <div class="footer__info-copyright">
+              <svg width="28" height="18">
+                <use href="#icon-footer_logo" />
+              </svg>
+              <span>© «Доктор Веб» 2003–2025</span>
+            </div>
+            <p class="footer__info-description">
+              &laquo;Доктор Веб&raquo;&nbsp;&mdash; российский производитель антивирусных средств защиты информации под маркой Dr.Web.
+            </p>
+          </div>
+          <div class="footer__links">
+            <a href="#" target="_blank">Обработка персональных данных</a>
+            <a href="#" target="_blank">Безопасная разработка и выпуск обновлений</a>
+          </div>
+          <div class="footer__links">
+            <a href="#" target="_blank">Политика конфиденциальности</a>
+            <a href="#" target="_blank">Информация по требованиям Минцифры России</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__overlay"></div>
+      <div class="popup__body">
+        <h3 class="popup__body-title">Регистрация прошла успешно!</h3>
+        <p class="popup__body-message"></p>
+        <div class="popup__body-buttons">
+          <button class="popup__body-btn">Хорошо</button>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- <svg>
+      <use href="#icon-footer_logo" />
+    </svg> -->
+
+
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
