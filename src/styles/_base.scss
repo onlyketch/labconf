@@ -4,6 +4,7 @@
     --color-acid: #5FD900;
     --color-secondary: #666666;
     --color-border: #CCCCCC;
+    --color-border-light: #EDF6E6;
     --color-disabled: #B3B3B3;
     --color-accent: #69B42E;
     --color-unactive: #F8F8F8;
@@ -29,4 +30,49 @@ body {
     flex-direction: column;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.text-acid {
+    color: var(--color-acid);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 805px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0 12px;
+
+    @media (min-width: 480px) {
+        padding: 0 16px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 0 100px;
+    }
+}
+
+.main {
+    padding: 40px 0;
+    flex: 1;
+
+    @media (min-width: 480px) {
+        padding: 48px 0;
+    }
+
+    @media (min-width: 768px) {
+        padding: 64px 0;
+    }
+}
+
+.popup {
+    display: none;
 }
