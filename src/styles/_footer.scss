@@ -66,9 +66,17 @@
 
         &-link {
             display: none;
+            transition: all .3s ease-out;
 
             @media (min-width: 768px) {
                 display: inline;
+            }
+
+            &:hover {
+                @media (min-width: 1280px) {
+                    color: var(--color-light);
+                    text-shadow: 0px 0px 3px rgba(212, 255, 179, 0.15);
+                }
             }
         }
 
@@ -134,6 +142,17 @@
 
         @media (min-width: 1280px) {
             width: 23rem;
+        }
+
+        a {
+            transition: all .3s ease-out;
+        }
+
+        a:hover {
+            @media (min-width: 1280px) {
+                color: var(--color-light);
+                text-shadow: 0px 0px 2px rgba(212, 255, 179, 0.15);
+            }
         }
     }
 
