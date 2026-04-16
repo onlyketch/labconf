@@ -4,13 +4,172 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 67.5rem;
+    height: 100%;
+    max-height: 67.5rem;
 
     &__img {
+        display: none;
+
+        @media (min-width: 480px) {
+            display: block;
+        }
+    }
+
+    &__img,
+    &__img_mob {
         width: 100%;
         height: 100%;
         object-fit: cover;
         opacity: 0.3;
         mix-blend-mode: lighten;
+        animation: bgFlicker 5s linear infinite;
+    }
+
+    &__img_mob {
+        @media (min-width: 480px) {
+            display: none;
+        }
+    }
+
+    &__circles {
+        position: absolute;
+        top: 30.1875rem;
+        left: 50%;
+        width: 58.9375rem;
+        height: 45.9375rem;
+        transform: translateX(-50%);
+
+        @media (min-width: 480px) {
+            top: 31.25rem;
+        }
+
+        @media (min-width: 768px) {
+            top: 35.5625rem;
+        }
+
+        @media (min-width: 1280px) {
+            top: 25.75rem;
+        }
+    }
+
+    &__group {
+        position: absolute;
+        width: 36rem;
+        height: 32.8125rem;
+        filter: blur(100px);
+        animation: groupRotate 15s linear infinite;
+
+        &:first-child {
+            left: 0;
+            top: 0;
+        }
+
+        &:last-child {
+            right: 0;
+            bottom: 0;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        background-color: var(--color-acid);
+        border-radius: 50%;
+    }
+
+    &__circle-small {
+        width: 14.625rem;
+        height: 14.625rem;
+        top: 4.3125rem;
+        left: 0;
+        animation: moveSmall 4s ease-in-out infinite;
+    }
+
+    &__circle-medium {
+        width: 15.5625rem;
+        height: 15.5625rem;
+        left: 9.875rem;
+        bottom: 0;
+        animation: moveMedium 4s ease-in-out infinite;
+    }
+
+    &__circle-big {
+        width: 21.9375rem;
+        height: 21.9375rem;
+        top: 0;
+        right: 0;
+        animation: moveBig 4s ease-in-out infinite;
     }
 }
+
+@keyframes groupRotate {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  33.333% {
+    transform: rotate(-120deg);
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  66.666% {
+    transform: rotate(-240deg);
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes moveSmall {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(40px, 20px); 
+  }
+}
+
+@keyframes moveMedium {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-20px, -30px);
+  }
+}
+
+@keyframes moveBig {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-30px, 40px);
+  }
+}
+
+
+@keyframes bgFlicker {
+  0%, 60% {
+    opacity: 0.3;
+  }
+
+  64% {
+    opacity: 1;
+  }
+
+  94% {
+    opacity: 0.3;
+  }
+
+  96% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+

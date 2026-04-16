@@ -67,6 +67,7 @@ a {
     position: relative;
     padding: 2.5rem 0;
     flex: 1;
+    overflow-x: clip;
 
     @media (min-width: 480px) {
         padding: 3rem 0;
@@ -79,4 +80,11 @@ a {
 
 .hidden {
     display: none;
+}
+
+.header,
+.hero,
+.registration,
+.contact-us {
+    //opacity: 0;
 }

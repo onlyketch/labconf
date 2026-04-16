@@ -1,4 +1,6 @@
 .contact-us {
+    position: relative;
+    z-index: 10;
     max-width: 568px;
     margin: 0 auto;
     background: radial-gradient(100% 100% at 100% 0%, #575757 0%, #212121 100%);
