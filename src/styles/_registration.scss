@@ -69,10 +69,23 @@
         }
 
         &-error-text {
+            margin-top: 0.5rem;
             font-size: 0.875rem;
             line-height: 1.29;
             color: var(--color-error);
             display: none;
+        }
+
+        &-input.filled {
+            border: 1px solid var(--color-dark);
+        }
+
+        &-input.error {
+            border: 1px solid var(--color-error);
+        }
+
+        &-input.error + &-error-text {
+            display: block;
         }
 
         &-warning {
@@ -84,7 +97,6 @@
             border-radius: 0.625rem;
             padding: 1rem 1.5rem;
             margin-top: 2rem;
-            display: none;
         }
 
         &-note {
